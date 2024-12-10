@@ -1,18 +1,25 @@
 $dokka.format:html-v1
 $dokka.linkExtension:html
+$dokka.location:controllers.Act1////PointingToDeclaration/-git-hub-classroom-template/controllers.Act1/index.html
+$dokka.location:controllers.Act1/Act1Kt///PointingToDeclaration/-git-hub-classroom-template/controllers.Act1/-act1-kt/index.html
+$dokka.location:controllers.Act1/Act1Kt/calcularIVA/#kotlin.Int#kotlin.Double/PointingToDeclaration/-git-hub-classroom-template/controllers.Act1/-act1-kt/calcular-i-v-a.html
+$dokka.location:controllers.Act1/Act1Kt/ivaGeneral/#kotlin.Double#kotlin.Int/PointingToDeclaration/-git-hub-classroom-template/controllers.Act1/-act1-kt/iva-general.html
+$dokka.location:controllers.Act1/Act1Kt/main/#/PointingToDeclaration/-git-hub-classroom-template/controllers.Act1/-act1-kt/main.html
+$dokka.location:controllers.Act1/Act1Kt/menuIvas/#/PointingToDeclaration/-git-hub-classroom-template/controllers.Act1/-act1-kt/menu-ivas.html
+$dokka.location:controllers.Act1/Act1Kt/recogerEntero/#kotlin.String#java.util.Scanner/PointingToDeclaration/-git-hub-classroom-template/controllers.Act1/-act1-kt/recoger-entero.html
 $dokka.location:controllers.Act2////PointingToDeclaration/-git-hub-classroom-template/controllers.Act2/index.html
 $dokka.location:controllers.Act2/Act2Kt///PointingToDeclaration/-git-hub-classroom-template/controllers.Act2/-act2-kt/index.html
 $dokka.location:controllers.Act2/Act2Kt/abrirScanner/#/PointingToDeclaration/-git-hub-classroom-template/controllers.Act2/-act2-kt/abrir-scanner.html
-$dokka.location:controllers.Act2/Act2Kt/canviEnterARoman/#kotlin.Int/PointingToDeclaration/-git-hub-classroom-template/controllers.Act2/-act2-kt/canvi-enter-a-roman.html
+$dokka.location:controllers.Act2/Act2Kt/cencontrarUnidades/#kotlin.Int/PointingToDeclaration/-git-hub-classroom-template/controllers.Act2/-act2-kt/cencontrar-unidades.html
 $dokka.location:controllers.Act2/Act2Kt/cerrarScanner/#java.util.Scanner/PointingToDeclaration/-git-hub-classroom-template/controllers.Act2/-act2-kt/cerrar-scanner.html
 $dokka.location:controllers.Act2/Act2Kt/main/#/PointingToDeclaration/-git-hub-classroom-template/controllers.Act2/-act2-kt/main.html
 $dokka.location:controllers.Act2/Act2Kt/pedimosNumeroEntero/#java.util.Scanner/PointingToDeclaration/-git-hub-classroom-template/controllers.Act2/-act2-kt/pedimos-numero-entero.html
 $dokka.location:controllers.Act3////PointingToDeclaration/-git-hub-classroom-template/controllers.Act3/index.html
 $dokka.location:controllers.Act3/Act3Kt///PointingToDeclaration/-git-hub-classroom-template/controllers.Act3/-act3-kt/index.html
-$dokka.location:controllers.Act3/Act3Kt/abrirScanner/#/PointingToDeclaration/-git-hub-classroom-template/controllers.Act3/-act3-kt/abrir-scanner.html
-$dokka.location:controllers.Act3/Act3Kt/cerrarScanner/#java.util.Scanner/PointingToDeclaration/-git-hub-classroom-template/controllers.Act3/-act3-kt/cerrar-scanner.html
 $dokka.location:controllers.Act3/Act3Kt/main/#/PointingToDeclaration/-git-hub-classroom-template/controllers.Act3/-act3-kt/main.html
-$dokka.location:controllers.Act3/Act3Kt/pedimosNumeroEntero/#java.util.Scanner/PointingToDeclaration/-git-hub-classroom-template/controllers.Act3/-act3-kt/pedimos-numero-entero.html
+$dokka.location:controllers.Act3/Act3Kt/mensajeValidacion/#kotlin.Boolean/PointingToDeclaration/-git-hub-classroom-template/controllers.Act3/-act3-kt/mensaje-validacion.html
+$dokka.location:controllers.Act3/Act3Kt/recogerLinea/#kotlin.String#java.util.Scanner/PointingToDeclaration/-git-hub-classroom-template/controllers.Act3/-act3-kt/recoger-linea.html
+$dokka.location:controllers.Act3/Act3Kt/validarSuperusuari/#kotlin.String#java.util.Scanner/PointingToDeclaration/-git-hub-classroom-template/controllers.Act3/-act3-kt/validar-superusuari.html
 $dokka.location:controllers.Act4////PointingToDeclaration/-git-hub-classroom-template/controllers.Act4/index.html
 $dokka.location:controllers.Act4/Act4Kt///PointingToDeclaration/-git-hub-classroom-template/controllers.Act4/-act4-kt/index.html
 $dokka.location:controllers.Act4/Act4Kt/abrirScanner/#/PointingToDeclaration/-git-hub-classroom-template/controllers.Act4/-act4-kt/abrir-scanner.html
@@ -21,6 +28,9 @@ $dokka.location:controllers.Act4/Act4Kt/cerrarScanner/#java.util.Scanner/Pointin
 $dokka.location:controllers.Act4/Act4Kt/main/#/PointingToDeclaration/-git-hub-classroom-template/controllers.Act4/-act4-kt/main.html
 $dokka.location:controllers.Act4/Act4Kt/pedimosElTitulo/#kotlin.String#java.util.Scanner/PointingToDeclaration/-git-hub-classroom-template/controllers.Act4/-act4-kt/pedimos-el-titulo.html
 $dokka.location:controllers.Act4/Act4Kt/titulo/#kotlin.String/PointingToDeclaration/-git-hub-classroom-template/controllers.Act4/-act4-kt/titulo.html
+$dokka.location:controllers.MensajesError////PointingToDeclaration/-git-hub-classroom-template/controllers.MensajesError/index.html
+$dokka.location:controllers.MensajesError/MensajesErrorKt///PointingToDeclaration/-git-hub-classroom-template/controllers.MensajesError/-mensajes-error-kt/index.html
+$dokka.location:controllers.MensajesError/MensajesErrorKt/letra_no_Entero/#/PointingToDeclaration/-git-hub-classroom-template/controllers.MensajesError/-mensajes-error-kt/letra_no_-entero.html
 $dokka.location:interfaces////PointingToDeclaration/-git-hub-classroom-template/interfaces/index.html
 $dokka.location:interfaces/MyInterface///PointingToDeclaration/-git-hub-classroom-template/interfaces/-my-interface/index.html
 $dokka.location:models////PointingToDeclaration/-git-hub-classroom-template/models/index.html
@@ -30,9 +40,11 @@ $dokka.location:models/MyModel/function/#/PointingToDeclaration/-git-hub-classr
 $dokka.location:utilities////PointingToDeclaration/-git-hub-classroom-template/utilities/index.html
 $dokka.location:utilities/MyUtilsKt///PointingToDeclaration/-git-hub-classroom-template/utilities/-my-utils-kt/index.html
 $dokka.location:utilities/MyUtilsKt/readSomething/#/PointingToDeclaration/-git-hub-classroom-template/utilities/-my-utils-kt/read-something.html
+controllers.Act1
 controllers.Act2
 controllers.Act3
 controllers.Act4
+controllers.MensajesError
 interfaces
 models
 utilities
