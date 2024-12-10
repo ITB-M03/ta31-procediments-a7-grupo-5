@@ -4,8 +4,9 @@ import java.util.*
 
 fun main(){
     val scanner = abrirScanner()
-    val nums = pedimosNumeroEntero(scanner)
-    val cambio = cencontrarUnidades(nums)
+    val nums = pedimosNumeroEntero("Introduce un numero entero para pasarlo a romano: ", scanner)
+    val cambio = encontrarUnidades(nums)
+    imprimirNumeroRoman(nums, cambio)
     cerrarScanner(scanner)
 }
 
@@ -33,7 +34,8 @@ fun cerrarScanner(scanner: Scanner) {
  * @param scanner El objeto Scanner para leer la entrada del usuario.
  * @return El número entero introducido por el usuario.
  */
-fun pedimosNumeroEntero(scanner: Scanner): Int {
+fun pedimosNumeroEntero(msg:String, scanner: Scanner): Int {
+    println(msg)
     val num = scanner.nextInt()
     return num
 }
@@ -44,7 +46,7 @@ fun pedimosNumeroEntero(scanner: Scanner): Int {
  * @param nums El número entero a convertir.
  * @return La representación en números romanos del número proporcionado.
  */
-fun cencontrarUnidades(nums: Int): String {
+fun encontrarUnidades(nums: Int):String {
     var numRoman = ""
     val unidades = arrayOf("", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX")
     val decenas = arrayOf("", "X", "XX", "XXX", "XL", "L", "LX", "LXX", "LXXX", "XC")
@@ -52,17 +54,23 @@ fun cencontrarUnidades(nums: Int): String {
     val miles = arrayOf("", "M", "MM", "MMM")
 
     val millar = nums / 1000
-    print(miles[millar])
+    numRoman += miles[millar]
 
     val calculoCentenas = (nums / 100) % 10
-    print(centenas[calculoCentenas])
+    numRoman += centenas[calculoCentenas]
 
     val calculoDecenas = (nums / 10) % 10
-    print(decenas[calculoDecenas])
+    numRoman += decenas[calculoDecenas]
 
     val calculoUnidades = nums % 10
-    print(unidades[calculoUnidades])
+    numRoman += unidades[calculoUnidades]
 
-    println(numRoman)
     return numRoman
+}
+/**
+ * Imprimimos el numero en romano
+ *
+ */
+fun imprimirNumeroRoman(nums:Int, numRoman:String){
+    println("El numero $nums en romano en $numRoman")
 }

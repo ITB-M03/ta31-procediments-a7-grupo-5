@@ -2,18 +2,21 @@ $dokka.format:html-v1
 $dokka.linkExtension:html
 $dokka.location:controllers.Act1////PointingToDeclaration/-git-hub-classroom-template/controllers.Act1/index.html
 $dokka.location:controllers.Act1/Act1Kt///PointingToDeclaration/-git-hub-classroom-template/controllers.Act1/-act1-kt/index.html
-$dokka.location:controllers.Act1/Act1Kt/calcularIVA/#kotlin.Int#kotlin.Double/PointingToDeclaration/-git-hub-classroom-template/controllers.Act1/-act1-kt/calcular-i-v-a.html
+$dokka.location:controllers.Act1/Act1Kt/calcularIVA/#kotlin.Int#kotlin.Double#kotlin.Int/PointingToDeclaration/-git-hub-classroom-template/controllers.Act1/-act1-kt/calcular-i-v-a.html
 $dokka.location:controllers.Act1/Act1Kt/ivaGeneral/#kotlin.Double#kotlin.Int/PointingToDeclaration/-git-hub-classroom-template/controllers.Act1/-act1-kt/iva-general.html
+$dokka.location:controllers.Act1/Act1Kt/ivaReducido/#kotlin.Double#kotlin.Int/PointingToDeclaration/-git-hub-classroom-template/controllers.Act1/-act1-kt/iva-reducido.html
+$dokka.location:controllers.Act1/Act1Kt/ivaSuperReducido/#kotlin.Double#kotlin.Int/PointingToDeclaration/-git-hub-classroom-template/controllers.Act1/-act1-kt/iva-super-reducido.html
 $dokka.location:controllers.Act1/Act1Kt/main/#/PointingToDeclaration/-git-hub-classroom-template/controllers.Act1/-act1-kt/main.html
 $dokka.location:controllers.Act1/Act1Kt/menuIvas/#/PointingToDeclaration/-git-hub-classroom-template/controllers.Act1/-act1-kt/menu-ivas.html
-$dokka.location:controllers.Act1/Act1Kt/recogerEntero/#kotlin.String#java.util.Scanner/PointingToDeclaration/-git-hub-classroom-template/controllers.Act1/-act1-kt/recoger-entero.html
+$dokka.location:controllers.Act1/Act1Kt/recogerDouble/#kotlin.String#java.util.Scanner/PointingToDeclaration/-git-hub-classroom-template/controllers.Act1/-act1-kt/recoger-double.html
 $dokka.location:controllers.Act2////PointingToDeclaration/-git-hub-classroom-template/controllers.Act2/index.html
 $dokka.location:controllers.Act2/Act2Kt///PointingToDeclaration/-git-hub-classroom-template/controllers.Act2/-act2-kt/index.html
 $dokka.location:controllers.Act2/Act2Kt/abrirScanner/#/PointingToDeclaration/-git-hub-classroom-template/controllers.Act2/-act2-kt/abrir-scanner.html
-$dokka.location:controllers.Act2/Act2Kt/cencontrarUnidades/#kotlin.Int/PointingToDeclaration/-git-hub-classroom-template/controllers.Act2/-act2-kt/cencontrar-unidades.html
 $dokka.location:controllers.Act2/Act2Kt/cerrarScanner/#java.util.Scanner/PointingToDeclaration/-git-hub-classroom-template/controllers.Act2/-act2-kt/cerrar-scanner.html
+$dokka.location:controllers.Act2/Act2Kt/encontrarUnidades/#kotlin.Int/PointingToDeclaration/-git-hub-classroom-template/controllers.Act2/-act2-kt/encontrar-unidades.html
+$dokka.location:controllers.Act2/Act2Kt/imprimirNumeroRoman/#kotlin.Int#kotlin.String/PointingToDeclaration/-git-hub-classroom-template/controllers.Act2/-act2-kt/imprimir-numero-roman.html
 $dokka.location:controllers.Act2/Act2Kt/main/#/PointingToDeclaration/-git-hub-classroom-template/controllers.Act2/-act2-kt/main.html
-$dokka.location:controllers.Act2/Act2Kt/pedimosNumeroEntero/#java.util.Scanner/PointingToDeclaration/-git-hub-classroom-template/controllers.Act2/-act2-kt/pedimos-numero-entero.html
+$dokka.location:controllers.Act2/Act2Kt/pedimosNumeroEntero/#kotlin.String#java.util.Scanner/PointingToDeclaration/-git-hub-classroom-template/controllers.Act2/-act2-kt/pedimos-numero-entero.html
 $dokka.location:controllers.Act3////PointingToDeclaration/-git-hub-classroom-template/controllers.Act3/index.html
 $dokka.location:controllers.Act3/Act3Kt///PointingToDeclaration/-git-hub-classroom-template/controllers.Act3/-act3-kt/index.html
 $dokka.location:controllers.Act3/Act3Kt/main/#/PointingToDeclaration/-git-hub-classroom-template/controllers.Act3/-act3-kt/main.html
