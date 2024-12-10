@@ -4,7 +4,7 @@ import java.util.*
 
 fun main(){
     val scanner = abrirScanner()
-    val titol = pedimosElTitulo(scanner)
+    val titol = pedimosElTitulo("Introduce el titulo que quieres centrar: ",scanner)
     val separacion = titulo(titol)
     centrar(separacion, titol)
     cerrarScanner(scanner)
@@ -31,7 +31,8 @@ fun cerrarScanner(scanner: Scanner){
  * @param scanner el scanner para leer la entrada del usuario
  * @return el titulo que el usuario habra introducido
  */
-fun pedimosElTitulo(scanner:Scanner): String{
+fun pedimosElTitulo(msg:String, scanner:Scanner): String{
+    println(msg)
     val nom = scanner.nextLine()
     return nom
 }
