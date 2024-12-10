@@ -4,8 +4,8 @@ import java.util.*
 
 fun main(){
     val scanner = abrirScanner()
-    val num1 = pedimosNumeroEntero(scanner)
-
+    val nums = pedimosNumeroEntero(scanner)
+    val cambio = canviEnterARoman(nums)
     cerrarScanner(scanner)
 }
 
@@ -22,6 +22,12 @@ fun pedimosNumeroEntero(scanner:Scanner): Int{
     return num
 }
 
-fun canviEnterARoman(){
-
+fun canviEnterARoman(nums: Int):String{
+    var numRoman = ""
+//    for(i in nums){
+//        if(i == 1){
+            numRoman += 'I'
+//        }
+    //}
+    return numRoman
 }
