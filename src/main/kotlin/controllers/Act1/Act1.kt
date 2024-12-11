@@ -1,7 +1,5 @@
 package controllers.Act1
 import controllers.MensajesError.letra_no_Entero
-import java.time.LocalDate
-import java.time.format.DateTimeFormatter
 import java.util.*
 import kotlin.math.roundToInt
 
@@ -14,15 +12,15 @@ fun main(){
     println()
     //datos de la fecha
     val año = datosfecha[0]
-    val mes = datosfecha[1]
+    val mes = datosfecha[1]-1
     val dia = datosfecha[2]
-    val fecha = Calendar.getInstance().apply { set(año,mes,dia) }
+    val fechaCompra = Calendar.getInstance().apply { set(año,mes,dia) }
+    val fechasIvas = fechasIva()
     println()
     menuIvas() //mostrar las opciones disponible al usuario
     val elecion = scan.nextInt()
-    val totalIva= calcularIVA(elecion, precio, fecha)
+    val totalIva= calcularIVA(elecion, precio, fechaCompra, fechasIvas)
     println(totalIva)
-
 }
 /**
  * @author Carlos Vargas
@@ -56,16 +54,16 @@ fun menuIvas(){
  * @param fecha año del iva que se quiere aplicar
  * @return Rertona el valor del iva redondeado a dos decimales, el valor dependera del la eleccion del usuario.
  */
-fun calcularIVA(eleccion:Int, precio:Double, fecha:Calendar) :Double{
+fun calcularIVA(eleccion:Int, precio:Double, fecha:Calendar, fechaIva:MutableList<Calendar>) :Double{
     var iva =0.0
     if (eleccion ==1){
-        iva = ivaGeneral(precio, fecha)
+        iva = ivaGeneral(precio, fecha, fechaIva)
     }
     else if (eleccion==2){
-        iva = ivaReducido(precio, fecha)
+        iva = ivaReducido(precio, fecha, fechaIva)
     }
     else if (eleccion==3){
-        iva = ivaSuperReducido(precio, fecha)
+        iva = ivaSuperReducido(precio, fecha, fechaIva)
     }
     else if (eleccion==4){
         iva = precio*0.0
@@ -82,23 +80,19 @@ fun calcularIVA(eleccion:Int, precio:Double, fecha:Calendar) :Double{
  * @param fecha año del iva que se quiere aplicar
  * @return Rertona el valor del iva dependiedno de su año de aplicacion.
  */
-fun ivaGeneral(precio: Double, fecha:Calendar):Double{
-    val fecha1986 = Calendar.getInstance().apply { set(1986, 0, 1) }
-    val fecha1995 = Calendar.getInstance().apply { set(1995, 0, 1) }
-    val fecha2010 = Calendar.getInstance().apply { set(2010, 0, 1) }
-    val fecha2012 = Calendar.getInstance().apply { set(2012, 6, 15) }
+fun ivaGeneral(precio: Double, fecha:Calendar, fechaIva: MutableList<Calendar>):Double{
     var iva:Double
     iva=0.0
-    if (fecha.before(fecha1986)){
+    if (fecha.before(fechaIva[0])){
         iva=precio*0.12
     }
-    else if (fecha.after(fecha1986) && fecha.before(fecha1995)){
+    else if (fecha.after(fechaIva[0]) && fecha.before(fechaIva[2])){
         iva=precio * 0.15
     }
-    else if (fecha.after(fecha1995) && fecha.before(fecha2010)){
+    else if (fecha.after(fechaIva[2]) && fecha.before(fechaIva[3])){
         iva=precio*0.16
     }
-    else if (fecha.after(fecha2010) && fecha.before(fecha2012)){
+    else if (fecha.after(fechaIva[3]) && fecha.before(fechaIva[4])){
         iva=precio*0.18
     }
     else{
@@ -112,19 +106,16 @@ fun ivaGeneral(precio: Double, fecha:Calendar):Double{
  * @param fecha año del iva que se quiere aplicar
  * @return Rertona el valor del iva dependiedno de su año de aplicacion.
  */
-fun ivaReducido(precio: Double, fecha:Calendar):Double{
+fun ivaReducido(precio: Double, fecha:Calendar, fechaIva: MutableList<Calendar>):Double{
     var iva:Double
-    val fecha1995 = Calendar.getInstance().apply { set(1995, 0, 1) }
-    val fecha2010 = Calendar.getInstance().apply { set(2010, 0, 1) }
-    val fecha2012 = Calendar.getInstance().apply { set(2012, 6, 15) }
     iva=0.0
-    if (fecha.before(fecha1995)){
+    if (fecha.before(fechaIva[2])){
         iva=precio*0.6
     }
-    else if (fecha.after(fecha1995) && fecha.before(fecha2010)){
+    else if (fecha.after(fechaIva[2]) && fecha.before(fechaIva[3])){
         iva=precio * 0.7
     }
-    else if (fecha.after(fecha2010) && fecha.before(fecha2012)){
+    else if (fecha.after(fecha[3]) && fecha.before(fechaIva[4])){
         iva=precio*0.8
     }
     else{
@@ -138,19 +129,30 @@ fun ivaReducido(precio: Double, fecha:Calendar):Double{
  * @param fecha año del iva que se quiere aplicar
  * @return Rertona el valor del iva dependiedno de su año de aplicacion.
  */
-fun ivaSuperReducido(precio: Double, fecha:Calendar):Double{
+fun ivaSuperReducido(precio: Double, fecha:Calendar, fechaIva: MutableList<Calendar>):Double{
     var iva:Double
-    val fecha1993 = Calendar.getInstance().apply { set(1993, 0, 1) }
-    val fecha1995 = Calendar.getInstance().apply { set(1995, 0, 1) }
     iva=0.0
-    if (fecha.before(fecha1993)){
+    if (fecha.before(fechaIva[1])){
         iva=0.0
     }
-    else if (fecha.after(fecha1993) && fecha.before(fecha1995)){
+    else if (fecha.after(fechaIva[1]) && fecha.before(fechaIva[2])){
         iva=precio * 0.3
     }
     else{
         iva=precio*0.10
     }
     return iva
+}
+/**
+ * @author Carlos vargas
+ * @return Retorna una lista con todas las fechas de implementacion de los ivas
+ */
+fun fechasIva():MutableList<Calendar>{
+    var fechas:MutableList<Calendar> = mutableListOf()
+    fechas.add(Calendar.getInstance().apply { set(1986, 0, 1) })
+    fechas.add(Calendar.getInstance().apply { set(1993, 0, 1) })
+    fechas.add(Calendar.getInstance().apply { set(1995, 0, 1) })
+    fechas.add(Calendar.getInstance().apply { set(2010, 0, 1) })
+    fechas.add(Calendar.getInstance().apply { set(2012, 6, 15) })
+    return fechas
 }
