@@ -7,20 +7,23 @@ fun main(){
     val scan = Scanner(System.`in`)
     var precio = recogerDouble("Ingrese el precio al cual quiere aplicar el iva: ", scan)
     scan.nextLine()
-    print("Ingresa la fecha de compra con el formato YYYY/MM/DD: ")
-    val datosfecha = scan.nextLine().split("/").map { it.toInt() }
-    println()
-    //datos de la fecha
-    val año = datosfecha[0]
-    val mes = datosfecha[1]-1
-    val dia = datosfecha[2]
-    val fechaCompra = Calendar.getInstance().apply { set(año,mes,dia) }
+    val fechaCompra = recogerCalendar("Ingresa la fecha de compra con el formato YYYY/MM/DD: ",scan)
     val fechasIvas = fechasIva()
     println()
     menuIvas() //mostrar las opciones disponible al usuario
     val elecion = scan.nextInt()
     val totalIva= calcularIVA(elecion, precio, fechaCompra, fechasIvas)
     println(totalIva)
+}
+fun recogerCalendar(msg:String, scan: Scanner):Calendar{
+    print(msg)
+    val fecha :Calendar
+    val datosFecha = scan.nextLine().split("/").map { it.toInt() }
+    val año = datosFecha[0]
+    val mes = datosFecha[1]-1
+    val dia = datosFecha[2]
+    fecha = Calendar.getInstance().apply { set(año,mes,dia) }
+    return fecha
 }
 /**
  * @author Carlos Vargas
