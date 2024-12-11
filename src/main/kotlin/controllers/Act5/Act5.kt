@@ -48,7 +48,7 @@ fun inicializarPila(pila: Pila){
 
 fun escogerOpcion(pila: Pila, opcion:Int, scanner: Scanner){
     while(opcion > 0 && opcion < 4){
-        val pilaVacia =  //CAMBIAR IMPORTANTE
+        pila.pilaVacia = false
         if(opcion == 1){
             opcion1(pila, scanner)
         } else if(opcion == 2){
@@ -60,17 +60,16 @@ fun escogerOpcion(pila: Pila, opcion:Int, scanner: Scanner){
 }
 
 fun opcion1(pila:Pila, scanner: Scanner) {
-    if(pila.pilaVacia == false) {
+    if (pila.pilaVacia == false) {
         println("En que posicon quieres introducir el número: ")
         val num1 = scanner.nextInt()
         println("Que número quieres introducir: ")
         val posicion = scanner.nextInt()
-        for(i in 0 until pila.elementos.size){
-            if(pila.elementos[i] == pila.elementos[posicion])
-            pila.elementos[posicion] = num1
+        if (posicion >= 0 && posicion < pila.elementos.size) {
+            pila.elementos[posicion] = num1 // Asignar el número en la posición indicada
+        } else {
+            println("Posición inválida")
         }
-
-
     }
 }
 
