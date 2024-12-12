@@ -2,12 +2,14 @@ $dokka.format:html-v1
 $dokka.linkExtension:html
 $dokka.location:controllers.Act1////PointingToDeclaration/-git-hub-classroom-template/controllers.Act1/index.html
 $dokka.location:controllers.Act1/Act1Kt///PointingToDeclaration/-git-hub-classroom-template/controllers.Act1/-act1-kt/index.html
-$dokka.location:controllers.Act1/Act1Kt/calcularIVA/#kotlin.Int#kotlin.Double#kotlin.Int/PointingToDeclaration/-git-hub-classroom-template/controllers.Act1/-act1-kt/calcular-i-v-a.html
-$dokka.location:controllers.Act1/Act1Kt/ivaGeneral/#kotlin.Double#kotlin.Int/PointingToDeclaration/-git-hub-classroom-template/controllers.Act1/-act1-kt/iva-general.html
-$dokka.location:controllers.Act1/Act1Kt/ivaReducido/#kotlin.Double#kotlin.Int/PointingToDeclaration/-git-hub-classroom-template/controllers.Act1/-act1-kt/iva-reducido.html
-$dokka.location:controllers.Act1/Act1Kt/ivaSuperReducido/#kotlin.Double#kotlin.Int/PointingToDeclaration/-git-hub-classroom-template/controllers.Act1/-act1-kt/iva-super-reducido.html
+$dokka.location:controllers.Act1/Act1Kt/calcularIVA/#kotlin.Int#kotlin.Double#java.util.Calendar#kotlin.collections.MutableList[java.util.Calendar]/PointingToDeclaration/-git-hub-classroom-template/controllers.Act1/-act1-kt/calcular-i-v-a.html
+$dokka.location:controllers.Act1/Act1Kt/fechasIva/#/PointingToDeclaration/-git-hub-classroom-template/controllers.Act1/-act1-kt/fechas-iva.html
+$dokka.location:controllers.Act1/Act1Kt/ivaGeneral/#kotlin.Double#java.util.Calendar#kotlin.collections.MutableList[java.util.Calendar]/PointingToDeclaration/-git-hub-classroom-template/controllers.Act1/-act1-kt/iva-general.html
+$dokka.location:controllers.Act1/Act1Kt/ivaReducido/#kotlin.Double#java.util.Calendar#kotlin.collections.MutableList[java.util.Calendar]/PointingToDeclaration/-git-hub-classroom-template/controllers.Act1/-act1-kt/iva-reducido.html
+$dokka.location:controllers.Act1/Act1Kt/ivaSuperReducido/#kotlin.Double#java.util.Calendar#kotlin.collections.MutableList[java.util.Calendar]/PointingToDeclaration/-git-hub-classroom-template/controllers.Act1/-act1-kt/iva-super-reducido.html
 $dokka.location:controllers.Act1/Act1Kt/main/#/PointingToDeclaration/-git-hub-classroom-template/controllers.Act1/-act1-kt/main.html
 $dokka.location:controllers.Act1/Act1Kt/menuIvas/#/PointingToDeclaration/-git-hub-classroom-template/controllers.Act1/-act1-kt/menu-ivas.html
+$dokka.location:controllers.Act1/Act1Kt/recogerCalendar/#kotlin.String#java.util.Scanner/PointingToDeclaration/-git-hub-classroom-template/controllers.Act1/-act1-kt/recoger-calendar.html
 $dokka.location:controllers.Act1/Act1Kt/recogerDouble/#kotlin.String#java.util.Scanner/PointingToDeclaration/-git-hub-classroom-template/controllers.Act1/-act1-kt/recoger-double.html
 $dokka.location:controllers.Act2////PointingToDeclaration/-git-hub-classroom-template/controllers.Act2/index.html
 $dokka.location:controllers.Act2/Act2Kt///PointingToDeclaration/-git-hub-classroom-template/controllers.Act2/-act2-kt/index.html
@@ -31,6 +33,23 @@ $dokka.location:controllers.Act4/Act4Kt/cerrarScanner/#java.util.Scanner/Pointin
 $dokka.location:controllers.Act4/Act4Kt/main/#/PointingToDeclaration/-git-hub-classroom-template/controllers.Act4/-act4-kt/main.html
 $dokka.location:controllers.Act4/Act4Kt/pedimosElTitulo/#kotlin.String#java.util.Scanner/PointingToDeclaration/-git-hub-classroom-template/controllers.Act4/-act4-kt/pedimos-el-titulo.html
 $dokka.location:controllers.Act4/Act4Kt/titulo/#kotlin.String/PointingToDeclaration/-git-hub-classroom-template/controllers.Act4/-act4-kt/titulo.html
+$dokka.location:controllers.Act5////PointingToDeclaration/-git-hub-classroom-template/controllers.Act5/index.html
+$dokka.location:controllers.Act5/Act5Kt///PointingToDeclaration/-git-hub-classroom-template/controllers.Act5/-act5-kt/index.html
+$dokka.location:controllers.Act5/Act5Kt/abrirScanner/#/PointingToDeclaration/-git-hub-classroom-template/controllers.Act5/-act5-kt/abrir-scanner.html
+$dokka.location:controllers.Act5/Act5Kt/cerrarScanner/#java.util.Scanner/PointingToDeclaration/-git-hub-classroom-template/controllers.Act5/-act5-kt/cerrar-scanner.html
+$dokka.location:controllers.Act5/Act5Kt/main/#/PointingToDeclaration/-git-hub-classroom-template/controllers.Act5/-act5-kt/main.html
+$dokka.location:controllers.Act5/Act5Kt/menuFinal/#java.util.Scanner#controllers.Act5.Pila/PointingToDeclaration/-git-hub-classroom-template/controllers.Act5/-act5-kt/menu-final.html
+$dokka.location:controllers.Act5/Act5Kt/opcionMostrar/#controllers.Act5.Pila/PointingToDeclaration/-git-hub-classroom-template/controllers.Act5/-act5-kt/opcion-mostrar.html
+$dokka.location:controllers.Act5/Act5Kt/opcionPop/#controllers.Act5.Pila/PointingToDeclaration/-git-hub-classroom-template/controllers.Act5/-act5-kt/opcion-pop.html
+$dokka.location:controllers.Act5/Act5Kt/opcionPush/#controllers.Act5.Pila#java.util.Scanner/PointingToDeclaration/-git-hub-classroom-template/controllers.Act5/-act5-kt/opcion-push.html
+$dokka.location:controllers.Act5/Pila///PointingToDeclaration/-git-hub-classroom-template/controllers.Act5/-pila/index.html
+$dokka.location:controllers.Act5/Pila/Pila/#kotlin.Array[kotlin.Int]#kotlin.Boolean#kotlin.Int/PointingToDeclaration/-git-hub-classroom-template/controllers.Act5/-pila/-pila.html
+$dokka.location:controllers.Act5/Pila/getElementos/#/PointingToDeclaration/-git-hub-classroom-template/controllers.Act5/-pila/get-elementos.html
+$dokka.location:controllers.Act5/Pila/getIndice/#/PointingToDeclaration/-git-hub-classroom-template/controllers.Act5/-pila/get-indice.html
+$dokka.location:controllers.Act5/Pila/getPilaVacia/#/PointingToDeclaration/-git-hub-classroom-template/controllers.Act5/-pila/get-pila-vacia.html
+$dokka.location:controllers.Act5/Pila/setElementos/#kotlin.Array[kotlin.Int]/PointingToDeclaration/-git-hub-classroom-template/controllers.Act5/-pila/set-elementos.html
+$dokka.location:controllers.Act5/Pila/setIndice/#kotlin.Int/PointingToDeclaration/-git-hub-classroom-template/controllers.Act5/-pila/set-indice.html
+$dokka.location:controllers.Act5/Pila/setPilaVacia/#kotlin.Boolean/PointingToDeclaration/-git-hub-classroom-template/controllers.Act5/-pila/set-pila-vacia.html
 $dokka.location:controllers.MensajesError////PointingToDeclaration/-git-hub-classroom-template/controllers.MensajesError/index.html
 $dokka.location:controllers.MensajesError/MensajesErrorKt///PointingToDeclaration/-git-hub-classroom-template/controllers.MensajesError/-mensajes-error-kt/index.html
 $dokka.location:controllers.MensajesError/MensajesErrorKt/letra_no_Entero/#/PointingToDeclaration/-git-hub-classroom-template/controllers.MensajesError/-mensajes-error-kt/letra_no_-entero.html
@@ -47,6 +66,7 @@ controllers.Act1
 controllers.Act2
 controllers.Act3
 controllers.Act4
+controllers.Act5
 controllers.MensajesError
 interfaces
 models
