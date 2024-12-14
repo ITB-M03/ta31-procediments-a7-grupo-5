@@ -1,5 +1,6 @@
 package controllers.Act2
 
+import controllers.MensajesError.letra_no_Entero
 import java.util.*
 
 fun main(){
@@ -36,7 +37,14 @@ fun cerrarScanner(scanner: Scanner) {
  */
 fun pedimosNumeroEntero(msg:String, scanner: Scanner): Int {
     println(msg)
-    val num = scanner.nextInt()
+    var num :Int
+    try {
+        num = scanner.nextInt()
+    }
+    catch (errorLetra : InputMismatchException){
+        num= Int.MAX_VALUE
+        letra_no_Entero()
+    }
     return num
 }
 

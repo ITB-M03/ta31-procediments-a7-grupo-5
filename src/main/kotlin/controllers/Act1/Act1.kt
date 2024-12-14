@@ -1,4 +1,5 @@
 package controllers.Act1
+import controllers.Act2.pedimosNumeroEntero
 import controllers.MensajesError.letra_no_Entero
 import java.util.*
 import kotlin.math.roundToInt
@@ -11,7 +12,7 @@ fun main(){
     val fechasIvas = fechasIva()
     println()
     menuIvas() //mostrar las opciones disponible al usuario
-    val elecion = scan.nextInt()
+    val elecion = pedimosNumeroEntero("Seleccione cual es el iva que quiere aplicar: ", scan)
     val totalIva= calcularIVA(elecion, precio, fechaCompra, fechasIvas)
     println(totalIva)
 }
@@ -22,7 +23,13 @@ fun recogerCalendar(msg:String, scan: Scanner):Calendar{
     val año = datosFecha[0]
     val mes = datosFecha[1]-1
     val dia = datosFecha[2]
-    fecha = Calendar.getInstance().apply { set(año,mes,dia) }
+    fecha = Calendar.getInstance().apply {
+        set(año, mes, dia)
+        set(Calendar.HOUR_OF_DAY, 0)
+        clear(Calendar.MINUTE)
+        clear(Calendar.SECOND)
+        clear(Calendar.MILLISECOND)
+    }
     return fecha
 }
 /**
@@ -48,7 +55,6 @@ fun menuIvas(){
     println("2) Reducido")
     println("3) Super reducido")
     println("4) Excento")
-    print("Seleccione cual es el iva que quiere aplicar: ")
 }
 /**
  * @author Carlos Vargas
@@ -86,16 +92,16 @@ fun calcularIVA(eleccion:Int, precio:Double, fecha:Calendar, fechaIva:MutableLis
 fun ivaGeneral(precio: Double, fecha:Calendar, fechaIva: MutableList<Calendar>):Double{
     var iva:Double
     iva=0.0
-    if (fecha.before(fechaIva[0])){
+    if ( fecha < fechaIva[1]){
         iva=precio*0.12
     }
-    else if (fecha.after(fechaIva[0]) && fecha.before(fechaIva[2])){
+    else if (fecha >= fechaIva[1] && fecha < fechaIva[3]){
         iva=precio * 0.15
     }
-    else if (fecha.after(fechaIva[2]) && fecha.before(fechaIva[3])){
+    else if (fecha >= fechaIva[3] && fecha < fechaIva[4]){
         iva=precio*0.16
     }
-    else if (fecha.after(fechaIva[3]) && fecha.before(fechaIva[4])){
+    else if (fecha >= fechaIva[4] && fecha < fechaIva[5]){
         iva=precio*0.18
     }
     else{
@@ -112,13 +118,13 @@ fun ivaGeneral(precio: Double, fecha:Calendar, fechaIva: MutableList<Calendar>):
 fun ivaReducido(precio: Double, fecha:Calendar, fechaIva: MutableList<Calendar>):Double{
     var iva:Double
     iva=0.0
-    if (fecha.before(fechaIva[2])){
+    if (fecha.before(fechaIva[3])){
         iva=precio*0.6
     }
-    else if (fecha.after(fechaIva[2]) && fecha.before(fechaIva[3])){
+    else if ((fecha.after(fechaIva[2]) && fecha.before(fechaIva[3])) || fecha==fechaIva[3]){
         iva=precio * 0.7
     }
-    else if (fecha.after(fecha[3]) && fecha.before(fechaIva[4])){
+    else if ((fecha.after(fecha[3]) && fecha.before(fechaIva[4])) || fecha==fechaIva[4]){
         iva=precio*0.8
     }
     else{
@@ -135,10 +141,10 @@ fun ivaReducido(precio: Double, fecha:Calendar, fechaIva: MutableList<Calendar>)
 fun ivaSuperReducido(precio: Double, fecha:Calendar, fechaIva: MutableList<Calendar>):Double{
     var iva:Double
     iva=0.0
-    if (fecha.before(fechaIva[1])){
+    if (fecha.before(fechaIva[1]) || fecha==fechaIva[1]){
         iva=0.0
     }
-    else if (fecha.after(fechaIva[1]) && fecha.before(fechaIva[2])){
+    else if ((fecha.after(fechaIva[1]) && fecha.before(fechaIva[2])) || fecha==fechaIva[2]){
         iva=precio * 0.3
     }
     else{
@@ -152,10 +158,11 @@ fun ivaSuperReducido(precio: Double, fecha:Calendar, fechaIva: MutableList<Calen
  */
 fun fechasIva():MutableList<Calendar>{
     var fechas:MutableList<Calendar> = mutableListOf()
-    fechas.add(Calendar.getInstance().apply { set(1986, 0, 1) })
-    fechas.add(Calendar.getInstance().apply { set(1993, 0, 1) })
-    fechas.add(Calendar.getInstance().apply { set(1995, 0, 1) })
-    fechas.add(Calendar.getInstance().apply { set(2010, 0, 1) })
-    fechas.add(Calendar.getInstance().apply { set(2012, 6, 15) })
+    fechas.add(Calendar.getInstance().apply { set(1986, 0, 1); set(Calendar.HOUR_OF_DAY, 0); clear(Calendar.MINUTE); clear(Calendar.SECOND); clear(Calendar.MILLISECOND) })
+    fechas.add(Calendar.getInstance().apply { set(1992, 0, 1); set(Calendar.HOUR_OF_DAY, 0); clear(Calendar.MINUTE); clear(Calendar.SECOND); clear(Calendar.MILLISECOND) })
+    fechas.add(Calendar.getInstance().apply { set(1993, 0, 1); set(Calendar.HOUR_OF_DAY, 0); clear(Calendar.MINUTE); clear(Calendar.SECOND); clear(Calendar.MILLISECOND) })
+    fechas.add(Calendar.getInstance().apply { set(1995, 0, 1); set(Calendar.HOUR_OF_DAY, 0); clear(Calendar.MINUTE); clear(Calendar.SECOND); clear(Calendar.MILLISECOND) })
+    fechas.add(Calendar.getInstance().apply { set(2010, 0, 1); set(Calendar.HOUR_OF_DAY, 0); clear(Calendar.MINUTE); clear(Calendar.SECOND); clear(Calendar.MILLISECOND) })
+    fechas.add(Calendar.getInstance().apply { set(2012, 6, 15); set(Calendar.HOUR_OF_DAY, 0); clear(Calendar.MINUTE); clear(Calendar.SECOND); clear(Calendar.MILLISECOND) })
     return fechas
 }
