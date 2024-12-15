@@ -11,6 +11,8 @@ $dokka.location:controllers.Act1/Act1Kt/main/#/PointingToDeclaration/-git-hub-c
 $dokka.location:controllers.Act1/Act1Kt/menuIvas/#/PointingToDeclaration/-git-hub-classroom-template/controllers.Act1/-act1-kt/menu-ivas.html
 $dokka.location:controllers.Act1/Act1Kt/recogerCalendar/#kotlin.String#java.util.Scanner/PointingToDeclaration/-git-hub-classroom-template/controllers.Act1/-act1-kt/recoger-calendar.html
 $dokka.location:controllers.Act1/Act1Kt/recogerDouble/#kotlin.String#java.util.Scanner/PointingToDeclaration/-git-hub-classroom-template/controllers.Act1/-act1-kt/recoger-double.html
+$dokka.location:controllers.Act1/Act1Kt/resultadosIvas/#kotlin.Double#kotlin.Double/PointingToDeclaration/-git-hub-classroom-template/controllers.Act1/-act1-kt/resultados-ivas.html
+$dokka.location:controllers.Act1/Act1Kt/sumaDoubles/#kotlin.Double#kotlin.Double/PointingToDeclaration/-git-hub-classroom-template/controllers.Act1/-act1-kt/suma-doubles.html
 $dokka.location:controllers.Act2////PointingToDeclaration/-git-hub-classroom-template/controllers.Act2/index.html
 $dokka.location:controllers.Act2/Act2Kt///PointingToDeclaration/-git-hub-classroom-template/controllers.Act2/-act2-kt/index.html
 $dokka.location:controllers.Act2/Act2Kt/abrirScanner/#/PointingToDeclaration/-git-hub-classroom-template/controllers.Act2/-act2-kt/abrir-scanner.html
@@ -53,6 +55,7 @@ $dokka.location:controllers.Act5/Pila/setPilaVacia/#kotlin.Boolean/PointingToDec
 $dokka.location:controllers.MensajesError////PointingToDeclaration/-git-hub-classroom-template/controllers.MensajesError/index.html
 $dokka.location:controllers.MensajesError/MensajesErrorKt///PointingToDeclaration/-git-hub-classroom-template/controllers.MensajesError/-mensajes-error-kt/index.html
 $dokka.location:controllers.MensajesError/MensajesErrorKt/letra_no_Entero/#/PointingToDeclaration/-git-hub-classroom-template/controllers.MensajesError/-mensajes-error-kt/letra_no_-entero.html
+$dokka.location:controllers.MensajesError/MensajesErrorKt/letra_no_Numero/#/PointingToDeclaration/-git-hub-classroom-template/controllers.MensajesError/-mensajes-error-kt/letra_no_-numero.html
 $dokka.location:interfaces////PointingToDeclaration/-git-hub-classroom-template/interfaces/index.html
 $dokka.location:interfaces/MyInterface///PointingToDeclaration/-git-hub-classroom-template/interfaces/-my-interface/index.html
 $dokka.location:models////PointingToDeclaration/-git-hub-classroom-template/models/index.html
